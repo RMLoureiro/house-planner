@@ -1,0 +1,10 @@
+{
+  "name": "house-planner",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:api": "bun run --filter @house-planner/api dev",
+    "dev:web": "bun run --filter @house-planner/web dev"
+  }
+}
