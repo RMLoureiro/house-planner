@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL
+const BASE_URL = "/api"; // same-origin; Next rewrites this to Express
 
 export async function apiFetch<T>(
   path: string,

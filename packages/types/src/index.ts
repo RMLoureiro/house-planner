@@ -23,10 +23,19 @@ export interface Expense {
   paidById: string
   paidBy: User
   splitType: 'EQUAL' | 'CUSTOM'
+  splits: ExpenseSplit[]
   householdId: string
   receiptUrl: string | null
   date: string
   createdAt: string
+}
+
+export interface ExpenseSplit {
+  id: string
+  expenseId: string
+  userId: string
+  user: User
+  amount: number
 }
 
 export interface GroceryItem {
